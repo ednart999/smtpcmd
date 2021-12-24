@@ -39,15 +39,21 @@ smtpcmd parameters:
 
 Examples:
 1) SMTP server hosted by Mochahost
+
 smtpcmd.exe --Host mi3-wts6.my-hosting-panel.com --Port 587 --SSL true --User [Login-user] --Password [Login-password] --To [To-email] --From [From-email] --Subject "Test" --Body "Test" --Encoding ASCII
 
 2) SMTP server hosted by Microsoft
+
 smtpcmd.exe --Host smtp-mail.outlook.com --Port 587 --SSL true --User [Login-user] --Password [Login-password] --To [To-email] --From [From-email] --Subject "Test from Microsoft SMTP" --Body "Test" --Encoding ascii
 
-4) SMTP server hosted by Google
+3) SMTP server hosted by Google
+
 To try out Google SMTP, you need to do a few steps below since Google doesn't trust apps that it doesn't know about:
+
   a) Turn off Multi-Factor authentication first (https://myaccount.google.com/security)
+  
   b) Turn on Less Secure Apps option (https://myaccount.google.com/lesssecureapps)
+  
 smtpcmd.exe --Host smtp.gmail.com --Port 587 --SSL true --User [Login-user] --Password [Login-password] --To [To-email] --From [From-email] --Subject "Test from Google SMTP" --Body "Test" --Encoding ascii
 
 
